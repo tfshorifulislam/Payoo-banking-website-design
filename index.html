@@ -38,15 +38,20 @@
     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-3xl">
       <div class="card-body">
         <fieldset class="fieldset">
+
           <label  class="label font-bold text-neutral mb-3">Mobile Number</label>
-          <input maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 focus:outline-none mb-4" placeholder="Enter your number" />
+          <input id="input-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 focus:outline-none mb-4" placeholder="Enter your number" />
+
           <label  class="label font-bold text-neutral mb-3">4 Digit Pin</label>
-          <input maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 focus:outline-none" placeholder="Enter 4 Digit Pin" />
-          <button class="btn btn-primary mt-4 rounded-full">Login</button>
+          <input id="input-password" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 focus:outline-none" placeholder="Enter 4 Digit Pin" />
+
+          <button id="login-btn" class="btn btn-primary mt-4 rounded-full">Login</button>
+
         </fieldset>
       </div>
     </div>
      </section>
-
+     <!-- ==== script js file added ==== -->
+<script src="./Script/login.js"></script>
 </body>
 </html>
