@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
 
     <!-- ==== login page Logo ==== -->
-    <div class="mx-auto w-[260px] pt-[210px] mb-8">
+    <div class="mx-auto max-w-[260px] pt-[180px] mb-8">
         <img src="./assets/Logo-full.png" alt="Logo">
     </div>
 
@@ -41,7 +41,7 @@
           <label  class="label font-bold text-neutral mb-3">Mobile Number</label>
           <input maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 focus:outline-none mb-4" placeholder="Enter your number" />
           <label  class="label font-bold text-neutral mb-3">4 Digit Pin</label>
-          <input type="password" class="input rounded-full bg-base-200 focus:outline-none" placeholder="Enter 4 Digit Pin" />
+          <input maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 focus:outline-none" placeholder="Enter 4 Digit Pin" />
           <button class="btn btn-primary mt-4 rounded-full">Login</button>
         </fieldset>
       </div>
