@@ -105,5 +105,35 @@
             </button>
         </div>
      </section>
+
+     <!-- ==== cash out section ==== -->
+      <section id="cashout" class="w-11/12 mx-auto py-5">
+        <h2 class="text-[#080808e6] font-bold text-[18px] mb-4">
+            Cash Out
+        </h2>
+
+        <!-- ==== cash out form ==== -->
+    <div class="card bg-base-100 w-full shadow rounded-3xl">
+        <div class="card-body">
+            <fieldset class="fieldset">
+                <!-- ==== agent number input -->
+                <label  class="label font-bold text-neutral mb-3 text-neutral/50">Agent Number</label>
+                <input id="input-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 focus:outline-none mb-4 w-full" placeholder="Enter 11 digit number" />
+
+                <!-- ==== Amount input -->
+                <label  class="label font-bold text-neutral mb-3 text-neutral/50">Amount</label>
+                <input id="cashout-amount"type="text" class="input rounded-full bg-base-200 focus:outline-none mb-4 w-full" placeholder="Enter amount to withdraw" />
+
+                <!-- ==== Pin input -->
+                <label  class="label font-bold text-neutral mb-3 text-neutral/50">Pin Number</label>
+                <input id="input-number" maxlength="4" minlength="4" type="text" class="input rounded-full bg-base-200 focus:outline-none mb-4 w-full" placeholder="Enter 4 digit pin number" />
+
+
+                <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
+
+            </fieldset>
+      </div>
+    </div>
+      </section>
 </body>
 </html>
