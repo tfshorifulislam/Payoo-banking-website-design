@@ -1,36 +1,27 @@
 document.getElementById('cashout-btn').addEventListener('click', function(){
 
-    let cashoutNumberInput = document.getElementById('cashout-number')
-    let cashoutNumber = cashoutNumberInput.value;
-
+    let cashoutNumber = getValueFromInput('cashout-number')
     if(cashoutNumber.length !== 11){
         alert('Invalid Agent Number');
         return;
     }
 
-    let cashoutAmountInput = document.getElementById('cashout-amount');
-    let cashoutAmount = cashoutAmountInput.value;
-
-    let currentBalance =document.getElementById('balance')
-    let balance = currentBalance.innerText;
-
+    let cashoutAmount = getValueFromInput('cashout-amount')
+    let getBalance = document.getElementById('balance');
+    let balance = getBalance.innerText;
     let newBalance = Number(balance) - Number(cashoutAmount);
 
-    if(newBalance < 0 ){
+    if(newBalance < 0){
         alert('Invalid Amount');
         return;
     }
 
-    let cashoutPin = document.getElementById('cashout-pin')
-    let pin = cashoutPin.value;
-
+    let pin = getValueFromInput('cashout-pin')
     if(pin === '8520'){
         alert('Cash-out Successful');
-        currentBalance.innerText = newBalance;
-
+        getBalance.innerText = newBalance;
     }
     else{
-        alert('Invalid Pin');
-        return;
+        alert('Invalid Password')
     }
 })
