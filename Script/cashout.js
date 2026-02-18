@@ -18,7 +18,7 @@ document.getElementById('cashout-btn').addEventListener('click', function(){
     let pin = getValueFromInput('cashout-pin')
     if(pin === '8520'){
         alert('Cash-out Successful');
-        document.getElementById('balance').innerText = newBalance;
+        setBalance(newBalance)
     }
     else{
         alert('Invalid Password')

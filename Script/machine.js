@@ -12,3 +12,9 @@ function getBalance(){
     console.log(Number(balance))
     return Number(balance);
 }
+
+// machine set balance
+function setBalance (value){
+    let balanceElement = document.getElementById('balance');
+    balanceElement.innerText = value;
+}
