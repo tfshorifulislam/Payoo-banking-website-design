@@ -69,13 +69,13 @@
         <div class="card-info grid grid-cols-2 sm:grid-cols-3 gap-3">
 
             <!-- ==== card-opt-1 -->
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+            <button onclick="showOnly('add-money')" class="btn flex-col h-full py-4 btn-primary btn-soft">
                 <img class="w-6" src="./assets/opt-1.png" alt="">
                 <p class="text-[#080808b3] font-normal">Add Money</p>
             </button>
 
             <!-- ==== card-opt-2 -->
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+            <button onclick="showOnly('cashout')" class="btn flex-col h-full py-4 btn-primary btn-soft">
                 <img class="w-6" src="./assets/opt-2.png" alt="">
                 <p class="text-[#080808b3] font-normal">Cashout</p>
             </button>
@@ -151,7 +151,7 @@
 
 
      <!-- ==== cash out section ==== -->
-      <section id="cashout" class="w-11/12 mx-auto py-5 hidden">
+      <section id="cashout" class="w-11/12 mx-auto py-5">
         <h2 class="text-[#080808e6] font-bold text-[18px] mb-4">
             Cash Out
         </h2>

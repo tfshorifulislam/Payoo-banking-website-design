@@ -18,3 +18,16 @@ function setBalance (value){
     let balanceElement = document.getElementById('balance');
     balanceElement.innerText = value;
 }
+
+
+// toggle button 
+function showOnly (id){
+    let addMoney = document.getElementById('add-money')
+    let cashout = document.getElementById('cashout')
+
+    addMoney.classList.add('hidden')
+    cashout.classList.add('hidden')
+
+    let show = document.getElementById(id)
+    show.classList.remove('hidden')
+}
