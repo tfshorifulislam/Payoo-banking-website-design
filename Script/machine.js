@@ -24,10 +24,15 @@ function setBalance (value){
 function showOnly (id){
     let addMoney = document.getElementById('add-money')
     let cashout = document.getElementById('cashout')
+    let transaction = document.getElementById('history')
 
     addMoney.classList.add('hidden')
     cashout.classList.add('hidden')
+    transaction.classList.add('hidden')
+
 
     let show = document.getElementById(id)
     show.classList.remove('hidden')
 }
+
+

@@ -23,8 +23,16 @@ document.getElementById('add-money-btn').addEventListener('click', function(){
 
     let pin = getValueFromInput('add-money-pin')
     if(pin === '8520'){
-        alert(`Add money successful from ${bankSelect} 
-                at ${new Date()}`);
+        // alert(`Add money successful from ${bankSelect} 
+        //         at ${new Date()}`);
+        let newHistory = document.getElementById('history-container');
+        let newDiv = document.createElement('div');
+        newDiv.innerHTML = `
+        <div id="Transaction-card" class="p-5 bg-base-100">
+        Add money successful from ${bankSelect}, account-number ${accNumber} at ${new Date()}
+        </div>
+        `
+        newHistory.append(newDiv)
         setBalance(newBalance)
     }
     else{
