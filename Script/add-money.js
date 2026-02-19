@@ -23,8 +23,7 @@ document.getElementById('add-money-btn').addEventListener('click', function(){
 
     let pin = getValueFromInput('add-money-pin')
     if(pin === '8520'){
-        // alert(`Add money successful from ${bankSelect} 
-        //         at ${new Date()}`);
+        alert('Add money successful from');
         let newHistory = document.getElementById('history-container');
         let newDiv = document.createElement('div');
         newDiv.innerHTML = `
